@@ -10,8 +10,8 @@ st.markdown("**Powered by DeepSeek-R1-Distill-Qwen-1.5B-Q8_0**")
 def load_model():
     print("Downloading model from bartowski/DeepSeek-R1-Distill-Qwen-1.5B-GGUF ...")
     model_path = hf_hub_download(
-        repo_id="bartowski/DeepSeek-R1-Distill-Qwen-1.5B-GGUF",
-        filename="DeepSeek-R1-Distill-Qwen-1.5B-Q8_0.gguf"
+        repo_id="ggml-org/DeepSeek-R1-Distill-Qwen-1.5B-Q4_0-GGUF",
+        filename="deepseek-r1-distill-qwen-1.5b-q4_0.gguf"
     )
     print(f"Downloaded: {model_path}")
     print(f"File size: {os.path.getsize(model_path) / 1e9:.2f} GB")
