@@ -8,9 +8,9 @@ st.markdown("**Powered by DeepSeek-R1-Distill-Qwen-1.5B-Q8_0**")
 
 @st.cache_resource
 def load_model():
-    print("Downloading model from prakhar146/deepseek_distill_qwen ...")
+    print("Downloading model from bartowski/DeepSeek-R1-Distill-Qwen-1.5B-GGUF ...")
     model_path = hf_hub_download(
-        repo_id="prakhar146/deepseek_distill_qwen",
+        repo_id="bartowski/DeepSeek-R1-Distill-Qwen-1.5B-GGUF",
         filename="DeepSeek-R1-Distill-Qwen-1.5B-Q8_0.gguf"
     )
     print(f"Downloaded: {model_path}")
